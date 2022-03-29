@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-    private var titles = arrayOf("Movie One", "Movie Two", "Movie Three", "Movie Four", "Movie Five", "Movie Six", "Movie Seven", "Movie Eight")
-    private var details = arrayOf("item one details", "item two details", "item three details", "item four details", "item five details",
-        "item six details", "item seven details", "item eight details")
-    private var images = intArrayOf(R.drawable.batman, R.drawable.movie_template, R.drawable.movie_template, R.drawable.movie_template,
-        R.drawable.movie_template,R.drawable.movie_template,R.drawable.movie_template,R.drawable.movie_template,)
+    private var titles = arrayOf("THE BATMAN", "SONIC THE HEDGEHOG", "UNCHARTED", "PHANTON OF THE OPEN", "THE SPIDER-MAN: NO WAY HOME", "DEATH ON THE NILE", "THE ROYAL OPERA: LA TRAVIATA", "THE DUKE")
+    private var details = arrayOf("GET ALL TIMES & TICKETS", "GET ALL TIMES & TICKETS", "GET ALL TIMES & TICKETS", "GET ALL TIMES & TICKETS", "GET ALL TIMES & TICKETS",
+        "GET ALL TIMES & TICKETS", "GET ALL TIMES & TICKETS", "GET ALL TIMES & TICKETS")
+    private var images = intArrayOf(R.drawable.batman, R.drawable.sonic, R.drawable.uncharted, R.drawable.the_phanton_of_the_open_poster,
+        R.drawable.spiderman,R.drawable.death_on_the_nile,R.drawable.traviata,R.drawable.the_duke_poster)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.movie_layout, parent, false)
